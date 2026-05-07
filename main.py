@@ -18,7 +18,7 @@ PINTEREST_HEADERS = {
 
 @app.get("/")
 def home():
-    return {"status": "running", "target": "pinterest"}
+  return {"status": "running", "version": "v2_with_headers"}
 
 @app.get("/get-shorts")
 def get_shorts(query: str = "Rain video"):
